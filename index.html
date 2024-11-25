@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="head py-5 min-vh-100">
+      <div
+        class="container d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1 class="py-2 position-relative">Bookmarker</h1>
+        <div class="dots mt-5 pb-4 w-100">
+          <div
+            class="book d-flex justify-content-center align-items-center m-4"
+          >
+            <i class="fa-solid fa-bookmark color-1 fw-bold p-2 pb-3"></i>
+            <h2>Bookmark your <span>favorite sites</span></h2>
+            <i class="fa-solid fa-bookmark color-2 p-2 pb-3"></i>
+          </div>
+          <div class="site-name fw-bold">
+            <label for="name" class="pb-2"
+              ><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label
+            >
+            <div class="input-group flex-nowrap">
+              <input
+                oninput="validation(this)"
+                id="name"
+                type="text"
+                class="form-control w-100 nmm"
+                placeholder="Bookmark Name"
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+          </div>
+          <div class="site-url pt-3 fw-bold">
+            <label for="url" class="pb-2"
+              ><i class="fa-solid fa-link pe-2"></i>Site URL
+            </label>
+            <div class="input-group flex-nowrap">
+              <input
+                oninput="validation(this)"
+                id="url"
+                type="url"
+                class="form-control w-100"
+                placeholder="Website URL"
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+          </div>
+          <div
+            class="button w-100 d-flex justify-content-center align-items-center pt-2"
+          >
+            <button class="btn btn-submit px-5 py-2 mt-3" id="submit">
+              Submit
+            </button>
+          </div>
+        </div>
+        <table class="table mt-3 text-center bg-light fs-6 fw-bold">
+          <thead>
+            <tr>
+              <th class="text-capitalize">index</th>
+              <th class="text-capitalize">Website Name</th>
+              <th class="text-capitalize">Visit</th>
+              <th class="text-capitalize">Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            <!-- <tr>
+              <td class="pt-3">1</td>
+              <td class="pt-3">menna</td>
+              <td>
+                <button id="visit" class="btn  px-3 py-2">
+                  <i class="fa-solid fa-eye pe-2"></i>Visit
+                </button>
+              </td>
+              <td>
+                <button id="hhh" class="btn px-3 py-2">
+                  <i class="fa-solid fa-trash-can pe-2"></i>Delete
+                </button>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="cartona"></div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

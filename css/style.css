@@ -1,0 +1,119 @@
+*::selection {
+  background-color: #fec260;
+}
+div.head {
+  background-color: #f7ecde;
+  position: relative;
+  z-index: 1;
+}
+h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+  line-height: 60px;
+  color: rgb(53, 46, 40);
+}
+h1::after {
+  content: "";
+  width: 100%;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background-color: #fec260;
+  z-index: -1;
+  transition: all 0.3s;
+}
+h1:hover::after {
+  height: 38px;
+}
+h2 {
+  font-family: "Righteous", sans-serif;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #3ca55c;
+}
+h2 span {
+  color: #b5ac49;
+}
+.dots {
+  border-width: 2px 0;
+  border-style: dotted;
+  border-color: #352e28;
+}
+.book i.color-1 {
+  color: #3ca55c;
+}
+.book i.color-2 {
+  color: #b5ac49;
+}
+.site-name,
+.site-url {
+  font-family: "PT Sans Caption", sans-serif;
+}
+.book {
+  font-size: 25px;
+  line-height: 25px;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+.button .btn {
+  color: #ffff;
+  background-color: #bb4120;
+  transition: all 0.3s;
+}
+.btn:hover {
+  color: #ffff;
+  background-color: #a03315;
+}
+.table {
+  font-family: "PT Sans Caption", sans-serif;
+}
+#visit {
+  color: #ffff;
+  background-color: #9eb23b;
+  transition: all 0.3s;
+}
+#visit:hover {
+  background-color: #6e8018;
+}
+#delete {
+  color: #ffff;
+  background-color: #eb1d36;
+  transition: all 0.3s;
+}
+#delete:hover {
+  background-color: #ba081d;
+}
+.lightBoxContainer {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.lightBox {
+  width: 500px;
+  background-color: #fff;
+}
+.round1 {
+  width: 22px;
+  height: 22px;
+  background-color: #f15f5d;
+}
+.round2 {
+  width: 22px;
+  height: 22px;
+  background-color: #febe2e;
+}
+.round3 {
+  width: 22px;
+  height: 22px;
+  background-color: #4db748;
+}
+.right {
+  color: #bb4120;
+}
